@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Roadtriptask</title>
+
+		<script src="../static/lib/jquery-min.js"> </script>
+		<script src="../static/lib/jquery.autocomplete.min.js"> </script>
+		<script src="../static/lib/fontawesome.all.min.js"> </script>
+
+
+		<script src="../static/lib/underscore-min.js"> </script>
+		<script src="../static/lib/backbone-min.js"> </script>
+		<script src="../static/lib/d3.v3.min.js"> </script>
+		<script src="../static/lib/vis.min.js"> </script>
+		<script src="../static/lib/bootstrap.min.js"> </script>
+		<script src="../static/lib/Sortable.min.js"> </script>
+		<script src="../static/js/Q.js"> </script>
+
+		<link rel="stylesheet" href="../static/lib/bootstrap.min.css" />
+		<link rel="stylesheet" href="../static/lib/fontawesome.all.min.css" />
+		<link rel="stylesheet" href="../static/lib/vis.min.css" />
+		<link rel="stylesheet" href="../static/css/roadtriptask.css" />
+
+		<script src="../static/js/dijkstra.js"> </script>
+		<script src="../static/js/roadtriptask_base.js"> </script>
+		<script src="../static/js/roadtriptask_standalone.js"> </script>
+
+	</head>
+	<body>
+		<div id="preload_images" style="display:none"></div>
+		<div class="overlayed"></div>
+		<div id="map">
+			<div id="canvas"></div>
+		</div>
+		<div id="cityinput">
+			<input type="text" autocomplete="off" placeholder="City"></input>
+			<input type="submit" value="Reveal"></input>
+			<button id="finishedbutton" class="mybutton">Submit</button>
+			<button id="nexttrialbutton" class="mybutton">Next</button>
+		</div>
+		<div id="feedback">
+			<span style="font-size:4vh;text-align: center;"></span>
+			<div class="loader"></div>
+		</div>
+		<p id = 'car' class='myicon' style = "display:none"><i class='fas fa-car-side'></i></p>
+		<p id = 'star' class='myicon' style = "display:none"><i class='fas fa-star'></i></p>
+		<div class="popup" id="instructions">
+			<h4 style="font-size:4vh;">Instructions</h4>
+			<img src=""></img>
+			<button id="previousbutton" type="button" class="mybutton" style="bottom:8%;left:43%;width:10%">Previous</button>
+			<button id="nextbutton" type="button" class="mybutton" style="bottom:8%;left:57%;width:10%">Next</button>
+		</div>
+		<div class="popup" id="comments">
+			<h4 style="font-size:4vh;">Comments</h4>
+			<p></p>
+			<textarea id="comment_input" style="resize:none"></textarea>
+			<button type="button" class="mybutton" style="bottom:8%;left:50%;width:10%">Next</button>
+		</div>
+		<div class="popup" id="attention_quiz">
+			<h4 style="font-size:4vh;">Instructions</h4>
+			<button type="button" class="mybutton" style="bottom:8%;left:50%;width:10%">Submit</button>
+		</div>
+		<div class="popup" id="window_error">
+			<h4 style="font-size:4vh;">Window too small</h4>
+			<p>Your browser window is too small for this experiment to run properly.<br><br>Please make your window larger, or if it is already maximized, return the study so someone else may do it.</p>
+		</div>
+
+	</body>
+</html>
