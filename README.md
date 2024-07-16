@@ -1,6 +1,9 @@
-# Psirokuturk
+# Roadtrip task code
 
-A starter pack for running online experiments with Psiturk on Heroku.
+Clone this repo and then run `python -m http.server` (or similar) to spin up a local web server. Then open http://localhost:8000/ in your browser.
+
+
+
 
 ## Requirements
 
